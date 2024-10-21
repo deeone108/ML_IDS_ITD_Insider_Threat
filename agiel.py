@@ -8,7 +8,7 @@ import pandas as pd
 
 path_to_dataset = "./your_dataset/" # Path to your own dataset data
 
-#Specify the .csv files and wich columns to read
+#Specify the .csv files and wich columns to read.
 log_types = [
 	"device", 
 	"email",
@@ -40,7 +40,7 @@ def funcstruct():
 			activity, [to, cc, bcc], filename, activity, url
 		''')
 
-# Here we hand-engineer the features
+# Here we hand-engineer the features.
 def add_feature(name):
 	if name not in feature_map:
 		global features
