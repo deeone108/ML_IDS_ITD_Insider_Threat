@@ -85,7 +85,7 @@ def file_feat(row):
 	else:
 		return feature_map["File_other"]
 
-# Define a function to identify whether an employee has sent and email to a non-company email
+# Define a function to identify whether an employee has sent and email to a non-company email.
 def email_feat(row):
 	outsider = False 
 	if not pd.isnull(row["to"]):
